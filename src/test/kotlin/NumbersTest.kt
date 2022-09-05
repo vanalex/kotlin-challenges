@@ -24,4 +24,11 @@ internal class NumbersTest {
         assertFalse(numbers.containsRange(5..8, 5..9))
     }
 
+    @Test
+    fun testSum(){
+        assertEquals(numbers.sum(5), 15)
+        assertEquals(numbers.sum(1), 1)
+        assertEquals(numbers.sum(3), 6)
+    }
+
 }
